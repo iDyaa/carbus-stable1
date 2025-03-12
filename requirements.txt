@@ -1,0 +1,4 @@
+tensorflow
+matplotlib
+Flask
+opencv-python
