@@ -5,7 +5,32 @@ Vehicle Classifier is a deep learning project that uses a Convolutional Neural N
 ---
 
 ## Project Structure
-vehicle_classifier/ ├── data/ # Original dataset (or symlinks to /mnt/c/AI if preferred) │ ├── bus/ │ └── car/ ├── notebooks/ # (Optional) Jupyter notebooks for exploratory data analysis ├── saved_models/ # Directory to save trained models and weights │ └── vehicle_classifier_model.keras ├── src/ # Source code modules │ ├── init.py # Marks the directory as a Python package │ ├── preprocess.py # Functions for loading and preprocessing data │ ├── model.py # CNN architecture definition │ ├── train.py # Training routines and callbacks │ └── evaluate.py # (Optional) Evaluation functions ├── requirements.txt # List of project dependencies ├── main.py # Orchestrates training and evaluation: │ # - Loads and preprocesses data │ # - Builds the model │ # - Trains and evaluates the model ├── uploads/ # Directory for storing uploaded images (created automatically) ├── templates/ # HTML templates for the Flask web app │ ├── index.html # Main page with file uploader and button │ └── result.html # Page to display the image and classification result ├── app.py # Flask web application for image classification ├── .wslconfig # (Optional) WSL resource configuration (located in Windows user folder) └── README.md # Project documentation (this file)
+vehicle_classifier/
+├── data/                # Original dataset (or symlinks to /mnt/c/AI if you prefer)
+│   ├── bus/
+│   └── car/
+├── notebooks/           # (Optional) Jupyter notebooks for exploratory data analysis
+├── saved_models/        # Directory to save trained models and weights
+│   └── vehicle_classifier_model.keras
+├── src/
+│   ├── __init__.py
+│   ├── preprocess.py    # Functions for loading and preprocessing data
+│   ├── model.py         # Code defining your CNN architecture
+│   ├── train.py         # Training routines and callbacks
+│   └── evaluate.py      # (Optional) Functions to evaluate model performance
+├── requirements.txt     # List of project dependencies (e.g., TensorFlow, matplotlib, Pillow)
+├── main.py              # Main script that orchestrates the workflow:
+│                         #  - Calls preprocessing to get datasets
+│                         #  - Builds the model
+│                         #  - Trains and evaluates the model
+├── uploads/              # (this will be created automatically to store uploaded images)
+├── templates/
+│   ├── index.html        # Main page with file uploader and button
+│   └── result.html       # Page to display the image and classification result
+├── app.py               # Main script to start the Flask web app
+├── coordinate.py    #script to get coordinates of 4 regions based on user input
+├── .wslconfig           # (Optional) WSL resource configuration (located in Windows user folder)
+└── README.md            # Documentation, project overview, instructions, etc.
 
 
 ---
