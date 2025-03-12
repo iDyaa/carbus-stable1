@@ -99,7 +99,7 @@ vehicle_classifier/ ├── data/ # Original dataset (or symlinks to /mnt/c/AI
 
 ## License
 
-Specify your license here (for example, MIT License).
+==
 
 ---
 
